@@ -1,0 +1,192 @@
+.contact-section{
+    height: 100%;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+.contact.banner{
+    width: 100%;
+    height: 180px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), var(--primary));
+}
+.content.banner{
+    height: inherit;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    color: #fff;
+}
+.banner-content h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+ul.breadcrumb{
+    display: flex;
+}
+ul.breadcrumb li{
+    font-size: 13px;
+    font-weight: 100;
+    margin: 25px 20px 0 5px;
+}
+ul.breadcrumb li a{
+    color: var(--light-primary);
+}
+ul.breadcrumb li a:hover{
+    color: #fff;
+}
+.contact.container{
+    height: 630px;
+    width: 85%;
+    display: flex;
+    grid-template-columns: 70% 30%;
+    margin: 50px auto;
+}
+.contact.container .column-left{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 12px 0px 0px 12px;
+    box-shadow: 2px 4px 10px #555;
+    /*padding: 40px;*/    
+    padding: 40px 40px 0 40px;
+}
+.contact-form h2{
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+.contact.container .contact-form h3{
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.contact.container .column-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+}
+.column-right .get-in-touch{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    padding: 20px 0;
+    background-color: var(--primary);
+    border-radius: 12px 0 0 12px;
+    box-shadow: 2px 4px 5px var(--primary);
+}
+.column-right .get-in-touch h3{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;;
+    line-height: 50px;
+    padding-left: 70px;
+}
+.column-right span{
+    margin-left: 100px;
+    transition: transform .4s;
+}
+.column-right span:hover{
+    transform: scale(1.1);
+}
+.column-right .get-in-touch span i{
+    color: #fff;
+    margin-right: 20px;
+}
+.column-right span a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.map{
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+/* Responsive on width 1024px */
+@media(max-width:1024px){
+    .contact-form h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+/* Responsive on width 768px */
+@media(max-width:768px){
+    .contact.container{
+        height: 690px;
+        width: 90%;
+    }
+    .contact.container .column-left{
+        padding: 50px 40px 0 20px;
+    }
+    .contact.container .column-right{
+        width: 45%;
+    }
+    .contact.container .column-right .get-in-touch h3 {
+        font-size: 31px;
+        padding-left: 40px;
+    }
+    .contact.container .column-right .get-in-touch span {
+        margin-left: 40px;
+    }
+}
+
+/* Responsive on width 550px */
+@media(max-width:550px){
+    .contact.container{
+        height:  100%;
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: 50% 50%;
+    }
+    .contact.container .column-left{
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        padding: 50px 20px;
+        margin-top: 20px;
+    }
+    .contact.container .column-right{
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact.container .column-right .get-in-touch{
+        border-radius: 12px;
+        padding: 20px 0;
+    }
+}
+
+/* Contact Us */
+[dir="rtl"] .contact.banner{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), var(--primary));
+}
+[dir="rtl"] .content.banner{
+    padding-right: 50px;
+}
+
+[dir="rtl"] .contact-form h2 {
+    line-height: 40px;
+}
+[dir="rtl"]  .contact.container .column-right{
+    margin-right: -40px;
+}
+[dir="rtl"] .column-right .get-in-touch h3{
+    padding-right: 50px;
+}
+[dir="rtl"] .column-right span {
+    margin-right: 100px;
+}
+[dir="rtl"] .column-right .get-in-touch span i {
+    margin-left: 20px;
+}
